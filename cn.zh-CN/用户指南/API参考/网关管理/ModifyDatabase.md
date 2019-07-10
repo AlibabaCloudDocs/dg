@@ -18,3 +18,30 @@
 
 **返回参数**：SUCCESS或登录异常信息
 
+**示例**
+
+请求示例
+
+``` {#codeblock_8ub_kgn_ty3}
+http(s)://dg.aliyuncs.com/?Action=ModifyDatabase
+&RegionId=cn-hangzhou
+&GatewayId=111111xxxxxx
+&InstanceId=z8gw7qdjm361b4i
+&Host=11.163.23.109
+&Port=3440
+&DbType=MySQL
+&DbUserName=dg_test
+&DbPassword=password
+&<公共请求参数>
+```
+
+正常返回示例
+
+JSON 格式
+
+``` {#codeblock_9g8_2zk_dxu}
+{
+    "RequestId":"EAF2AA07-860D-43DA-BEE8-1E43AAE024ED"
+}
+```
+
