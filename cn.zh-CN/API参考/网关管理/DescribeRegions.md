@@ -11,21 +11,21 @@
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
 |Action|String|是|DescribeRegions|系统规定参数。取值：DescribeRegions。 |
-|RegionId|String|否|cn-hangzhou|Region ID |
+|RegionId|String|否|cn-hangzhou|地域 ID。 |
 
 ## 返回数据
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
-|Code|String|200|Code |
-|ErrorMsg|String|Error|错误信息 |
+|Code|String|200|响应码。 |
+|ErrorMsg|String|Error|错误信息。 |
 |Regions|Array of Region| |Region |
 |Region| | | |
-|LocalName|String|杭州|Region名称 |
+|LocalName|String|杭州|地域名称。 |
 |RegionEndpoint|String|dg.cn-hangzhou.aliyuncs.com|Region Endpoint |
-|RegionId|String|cn-hangzhou|Region ID |
+|RegionId|String|cn-hangzhou|地域 ID。 |
 |RequestId|String|41916DEB-F62D-41FA-AB53-FC61D795BC66|请求ID |
-|Success|Boolean|true|成功标示 |
+|Success|Boolean|true|请求成功标示。 |
 
 ## 示例
 
