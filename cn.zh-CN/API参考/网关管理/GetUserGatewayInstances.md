@@ -1,6 +1,6 @@
 # GetUserGatewayInstances
 
-获取网关节点详情
+调用GetUserGatewayInstances获取网关节点详情。
 
 ## 调试
 
@@ -11,16 +11,17 @@
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
 |Action|String|是|GetUserGatewayInstances|系统规定参数。取值：GetUserGatewayInstances。 |
+|GatewayId|String|是|dg-123|网关ID。 |
 
 ## 返回数据
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
-|Code|String|200| |
-|Data|String|\{"RequestId":"8AE40251-3041-4458-95BB-68DE17BDABB6","ErrorMsg":"","Data":"\[\{\\"connectEndpointType\\":\\"INTERNET\\",\\"currentDaemonVersion\\":\\"3.0\\",\\"currentVersion\\":\\"3.0\\",\\"endPoint\\":\\"pub-cn-hangzhou.dg.aliyuncs.com\\",\\"gatewayId\\":\\"dg-123\\",\\"gatewayInstanceId\\":\\"dg-node-123\\",\\"gatewayInstanceStatus\\":\\"RUNNING\\",\\"lastUpdateTime\\":\\"1611232930000\\",\\"localIP\\":\\"172.16.144.173\\",\\"message\\":\\"\\",\\"outputIP\\":\\"172.16.144.173\\"\}\]","Code":"","Success":true\}| |
-|ErrorMsg|String|Error| |
-|RequestId|String|8AE40251-3041-4458-95BB-68DE17BDABB6| |
-|Success|Boolean|true| |
+|Code|String|200|响应码。 |
+|Data|String|\{"RequestId":"8AE40251-3041-4458-95BB-68DE17BDABB6","ErrorMsg":"","Data":"\[\{\\"connectEndpointType\\":\\"INTERNET\\",\\"currentDaemonVersion\\":\\"3.0\\",\\"currentVersion\\":\\"3.0\\",\\"endPoint\\":\\"pub-cn-hangzhou.dg.aliyuncs.com\\",\\"gatewayId\\":\\"dg-123\\",\\"gatewayInstanceId\\":\\"dg-node-123\\",\\"gatewayInstanceStatus\\":\\"RUNNING\\",\\"lastUpdateTime\\":\\"1611232930000\\",\\"localIP\\":\\"172.16.144.173\\",\\"message\\":\\"\\",\\"outputIP\\":\\"172.16.144.173\\"\}\]","Code":"","Success":true\}|返回数据。 |
+|ErrorMsg|String|Error|错误信息。 |
+|RequestId|String|8AE40251-3041-4458-95BB-68DE17BDABB6|请求ID。 |
+|Success|Boolean|true|请求成功标识。 |
 
 ## 示例
 
