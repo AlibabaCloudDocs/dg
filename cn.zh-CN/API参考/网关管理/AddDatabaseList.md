@@ -11,18 +11,18 @@
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
 |Action|String|是|AddDatabaseList|系统规定参数。取值：AddDatabaseList。 |
-|DatabaseString|String|是|\[\{"host":"127.0.0.1","port":"3306","gatewayId":"dg-xsdasdasdasdasd"\}\]|需添加数据库的信息 |
-|ClientToken|String|否|123|Token |
+|DatabaseString|String|是|\[\{"host":"127.0.0.1","port":"3306","gatewayId":"dg-xsdasdasdasdasd"\}\]|需添加数据库的信息。 |
+|ClientToken|String|否|ETnLKlblzczshOTUbOCzxxxx|用于保证请求的幂等性。由客户端生成该参数值，要保证在不同请求间唯一，大小写敏感、不超过64个ASCII字符。 |
 
 ## 返回数据
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
-|Code|String|200|响应码 |
-|Data|String|SUCCESS|返回数据 |
-|ErrorMsg|String|Error|报错信息 |
-|RequestId|String|ABCD-1234|请求ID |
-|Success|Boolean|true|请求成功标识 |
+|Code|String|200|响应码。 |
+|Data|String|SUCCESS|返回数据。 |
+|ErrorMsg|String|Error|报错信息。 |
+|RequestId|String|ABCD-1234|请求ID。 |
+|Success|Boolean|true|请求成功标识。 |
 
 ## 示例
 
