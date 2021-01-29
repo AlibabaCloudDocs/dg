@@ -20,7 +20,7 @@
 |RegionId|String|是|cn-hangzhou|地域ID。 |
 |DbDescription|String|否|123|描述信息。 |
 |DbName|String|否|abcd|数据库名称。 |
-|ClientToken|String|否|123|Token。 |
+|ClientToken|String|否|ETnLKlblzczshOTUbOCzxxxx|不同请求间唯一，大小写敏感、不超过64个ASCII字符。 |
 
 ## 返回数据
 
