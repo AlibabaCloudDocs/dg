@@ -11,23 +11,23 @@
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
 |Action|String|是|CreateDatabaseAccessPoint|系统规定参数。取值：CreateDatabaseAccessPoint。 |
-|DbInstanceId|String|是|dg-db-abcd1234|实例ID |
-|VpcAZone|String|是|cn-hangzhou-i|VpcAZone |
-|VpcId|String|是|vpc-123abcd|VpcId |
-|VpcRegionId|String|是|cn-hangzhou|Vpc地域ID |
-|VSwitchId|String|是|vsw-123abcd|VSwitchId |
-|RegionId|String|否|cn-hangzhou|地域ID |
-|ClientToken|String|否|123|ClientToken |
+|DbInstanceId|String|是|dg-db-abcd1234|实例ID。 |
+|VpcAZone|String|是|cn-hangzhou-i|VpcAZone。 |
+|VpcId|String|是|vpc-123abcd|专有网络VpcId。 |
+|VpcRegionId|String|是|cn-hangzhou|Vpc地域ID。 |
+|VSwitchId|String|是|vsw-123abcd|虚拟交换机Id。 |
+|RegionId|String|否|cn-hangzhou|地域ID。 |
+|ClientToken|String|否|ETnLKlblzczshOTUbOCzxxxx|用于保证请求的幂等性。由客户端生成该参数值，要保证在不同请求间唯一，大小写敏感、不超过64个ASCII字符。 |
 
 ## 返回数据
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
-|Code|String|200|响应码 |
-|Data|String|\{"RequestId":"41916DEB-F62D-41FA-AB53-FC61D795BC66","ErrorMsg":"","Data":"\[\{\\"accessAddr\\":\\"172.16.144.216\\",\\"accessPort\\":3306,\\"dbInstanceId\\":\\"dg-db-abcd123\\",\\"gmtCreate\\":1609906765000,\\"gmtModified\\":1609906765000,\\"routerId\\":\\"cn-hangzhou\\",\\"vpcAzoneId\\":\\"cn-hangzhou-i\\",\\"vpcId\\":\\"vpc-123abcd\\",\\"vswitchId\\":\\"vsw-123abcd\\"\}\]","Count":1,"Code":"","Success":true\}|返回结果 |
-|ErrorMsg|String|Error|错误信息 |
+|Code|String|200|响应码。 |
+|Data|String|\{"RequestId":"41916DEB-F62D-41FA-AB53-FC61D795BC66","ErrorMsg":"","Data":"\[\{\\"accessAddr\\":\\"172.16.144.216\\",\\"accessPort\\":3306,\\"dbInstanceId\\":\\"dg-db-abcd123\\",\\"gmtCreate\\":1609906765000,\\"gmtModified\\":1609906765000,\\"routerId\\":\\"cn-hangzhou\\",\\"vpcAzoneId\\":\\"cn-hangzhou-i\\",\\"vpcId\\":\\"vpc-123abcd\\",\\"vswitchId\\":\\"vsw-123abcd\\"\}\]","Count":1,"Code":"","Success":true\}|返回数据。 |
+|ErrorMsg|String|Error|报错信息。 |
 |RequestId|String|41916DEB-F62D-41FA-AB53-FC61D795BC66|请求ID |
-|Success|Boolean|true|是否成功 |
+|Success|Boolean|true|请求成功标识。 |
 
 ## 示例
 
