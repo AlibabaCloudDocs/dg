@@ -1,6 +1,6 @@
 # DeleteDatabaseAccessPoint
 
-删除数据库访问点
+调用DeleteDatabaseAccessPoint删除数据库访问点。
 
 ## 调试
 
@@ -11,16 +11,22 @@
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
 |Action|String|是|DeleteDatabaseAccessPoint|系统规定参数。取值：DeleteDatabaseAccessPoint。 |
+|DbInstanceId|String|是|dg-db-abcd123|实例ID。 |
+|VpcAZone|String|是|cn-hangzhou-i|VpcAZone。 |
+|VpcId|String|是|vpc-123abcd|专有网络VpcId。 |
+|VpcRegionId|String|是|cn-hangzhou|Vpc地域Id。 |
+|VSwitchId|String|是|vsw-123abcd|虚拟交换机Id。 |
+|RegionId|String|否|cn-hangzhou|地域ID。 |
 
 ## 返回数据
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
-|Code|String|200| |
-|Data|String|SUCCESS| |
-|ErrorMsg|String|Error| |
-|RequestId|String|41916DEB-F62D-41FA-AB53-FC61D795BC66| |
-|Success|Boolean|true| |
+|Code|String|200|响应码。 |
+|Data|String|SUCCESS|返回数据。 |
+|ErrorMsg|String|Error|报错信息。 |
+|RequestId|String|41916DEB-F62D-41FA-AB53-FC61D795BC66|请求ID。 |
+|Success|Boolean|true|请求成功标识。 |
 
 ## 示例
 
