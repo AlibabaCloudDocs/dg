@@ -1,6 +1,6 @@
 # DeleteGatewayInstance
 
-删除数据库网关节点
+调用DeleteGatewayInstance删除数据库网关节点。
 
 ## 调试
 
@@ -11,16 +11,19 @@
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
 |Action|String|是|DeleteGatewayInstance|系统规定参数。取值：DeleteGatewayInstance。 |
+|GatewayId|String|是|dg-123|网关ID。 |
+|GatewayInstanceId|String|是|dg-node-123|网关实例ID。 |
+|RegionId|String|是|cn-hangzhou|地域ID。 |
 
 ## 返回数据
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
-|Code|String|200| |
-|Data|String|SUCCESS| |
-|ErrorMsg|String|Error| |
-|RequestId|String|41916DEB-F62D-41FA-AB53-FC61D795BC66| |
-|Success|Boolean|true| |
+|Code|String|200|响应码。 |
+|Data|String|SUCCESS|返回数据。 |
+|ErrorMsg|String|Error|报错信息。 |
+|RequestId|String|41916DEB-F62D-41FA-AB53-FC61D795BC66|请求ID。 |
+|Success|Boolean|true|请求成功标识。 |
 
 ## 示例
 
