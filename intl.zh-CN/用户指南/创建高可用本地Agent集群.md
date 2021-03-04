@@ -18,7 +18,7 @@
 2.  在左侧导航栏单击**网关列表**。
 3.  在选择添加高可用节点网关的右侧单击**详情**。
 
-    ![图片](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8376330061/p167356.png)
+    ![网关列表](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6888484161/p245557.png)
 
 4.  在网关详情页面单击**添加网关节点**。
 
@@ -29,7 +29,4 @@
     ![tp](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4825287951/p139203.png)
 
 6.  添加成功后可以在网关详情页面查看网关节点信息。
-
-    ![图片](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8376330061/p167490.png)
-
 
