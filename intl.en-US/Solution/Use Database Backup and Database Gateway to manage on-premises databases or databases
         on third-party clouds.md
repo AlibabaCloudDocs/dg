@@ -22,7 +22,7 @@ For more information about Database Gateway, see [What is Database Gateway?](~~1
 
     Set **Database Location** to **No public network IP: Port's self-built database \(accessed through the database gateway\)**. This allows you to specify the database that is connected to the database gateway as the source database.
 
-    ![tp](../images/p141350.png)
+    ![Select an instance type](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/3623097951/p97936.png)
 
     **Note:** If you select **No public network IP: Port's self-built database \(accessed through the database gateway\)**, cross-region backup is not supported. The source database instance must be in the same region as the Object Storage Service \(OSS\) bucket where the backup data is stored.
 
