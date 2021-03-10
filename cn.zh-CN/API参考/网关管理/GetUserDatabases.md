@@ -25,7 +25,7 @@
 |--|--|---|--|
 |Code|String|OK|响应码。 |
 |Count|Integer|1|个数。 |
-|Data|String|\[\{\\ “dbDescription\\” :\\“开发环境数据库\\” ,\\“dbType\\” :\\“MySQL\\” ,\\“dbUserName\\” :\\“dbatool\\” ,\\“gatewayId\\” :\\ “test\_gateway\\” ,\\“gatewayName\\” :\\“Gateway—1\\” ,\\“gmtCreate\\” :1560736969000,\\“gmtCreateString\\” :\\“2019-06-17 10:02\\” ,\\“host\\” :\\“11.163.23.109\\” ,\\“instanceId\\” :\\“instance\_1\\” ,\\“parentId\\” :\\“1344371\\” ,\\“port\\” :3440,\\“userId\\” :\\“1344371\\” \}\]|数据库列表信息。 |
+|Data|String|\[\{\\ “dbDescription\\” :\\“开发环境数据库\\” ,\\“dbType\\” :\\“MySQL\\” ,\\“dbUserName\\” :\\“dbatool\\” ,\\“gatewayId\\” :\\ “test\_gateway\\” ,\\“gatewayName\\” :\\“Gateway—1\\” ,\\“gmtCreate\\” :1560736969000,\\“gmtCreateString\\” :\\“2019-06-17 10:02\\” ,\\“host\\” :\\“11.\*.\*.109\\” ,\\“instanceId\\” :\\“instance\_1\\” ,\\“parentId\\” :\\“1344371\\” ,\\“port\\” :3440,\\“userId\\” :\\“1344371\\” \}\]|数据库列表信息。 |
 |ErrorMsg|String|无|异常信息。 |
 |RequestId|String|951AE6AA-BFC5-4DD8-8CD6-DFD3D51E4170|请求ID。 |
 |Success|String|true|是否成功。 |
@@ -35,7 +35,7 @@
 请求示例
 
 ```
-http(s)://dg.[regionId].aliyuncs.com/?Action=GetUserDatabases
+http(s)://[Endpoint]/?Action=GetUserDatabases
 &PageNumber=1
 &PageSize=10
 &<公共请求参数>
@@ -48,7 +48,7 @@ http(s)://dg.[regionId].aliyuncs.com/?Action=GetUserDatabases
 ```
 <RequestId>951AE6AA-BFC5-4DD8-8CD6-DFD3D51E4170</RequestId>
 <ErrorMsg>无</ErrorMsg>
-<Data>[{\ “dbDescription\” :\“开发环境数据库\” ,\“dbType\” :\“MySQL\” ,\“dbUserName\” :\“dbatool\” ,\“gatewayId\” :\ “test_gateway\” ,\“gatewayName\” :\“Gateway—1\” ,\“gmtCreate\” :1560736969000,\“gmtCreateString\” :\“2019-06-17 10:02\” ,\“host\” :\“11.163.23.109\” ,\“instanceId\” :\“instance_1\” ,\“parentId\” :\“1344371\” ,\“port\” :3440,\“userId\” :\“1344371\” }]</Data>
+<Data>[{\ “dbDescription\” :\“开发环境数据库\” ,\“dbType\” :\“MySQL\” ,\“dbUserName\” :\“dbatool\” ,\“gatewayId\” :\ “test_gateway\” ,\“gatewayName\” :\“Gateway—1\” ,\“gmtCreate\” :1560736969000,\“gmtCreateString\” :\“2019-06-17 10:02\” ,\“host\” :\“11.*.*.109\” ,\“instanceId\” :\“instance_1\” ,\“parentId\” :\“1344371\” ,\“port\” :3440,\“userId\” :\“1344371\” }]</Data>
 <Count>1</Count>
 <Code>OK</Code>
 <Success>true</Success>
@@ -57,7 +57,7 @@ http(s)://dg.[regionId].aliyuncs.com/?Action=GetUserDatabases
 `JSON`格式
 
 ```
-{"RequestId":"951AE6AA-BFC5-4DD8-8CD6-DFD3D51E4170","ErrorMsg":"无","Data":"[{\\ “dbDescription\\” :\\“开发环境数据库\\” ,\\“dbType\\” :\\“MySQL\\” ,\\“dbUserName\\” :\\“dbatool\\” ,\\“gatewayId\\” :\\ “test_gateway\\” ,\\“gatewayName\\” :\\“Gateway—1\\” ,\\“gmtCreate\\” :1560736969000,\\“gmtCreateString\\” :\\“2019-06-17 10:02\\” ,\\“host\\” :\\“11.163.23.109\\” ,\\“instanceId\\” :\\“instance_1\\” ,\\“parentId\\” :\\“1344371\\” ,\\“port\\” :3440,\\“userId\\” :\\“1344371\\” }]","Count":"1","Code":"OK","Success":"true"}
+{"RequestId":"951AE6AA-BFC5-4DD8-8CD6-DFD3D51E4170","ErrorMsg":"无","Data":"[{\\ “dbDescription\\” :\\“开发环境数据库\\” ,\\“dbType\\” :\\“MySQL\\” ,\\“dbUserName\\” :\\“dbatool\\” ,\\“gatewayId\\” :\\ “test_gateway\\” ,\\“gatewayName\\” :\\“Gateway—1\\” ,\\“gmtCreate\\” :1560736969000,\\“gmtCreateString\\” :\\“2019-06-17 10:02\\” ,\\“host\\” :\\“11.*.*.109\\” ,\\“instanceId\\” :\\“instance_1\\” ,\\“parentId\\” :\\“1344371\\” ,\\“port\\” :3440,\\“userId\\” :\\“1344371\\” }]","Count":"1","Code":"OK","Success":"true"}
 ```
 
 ## 错误码
