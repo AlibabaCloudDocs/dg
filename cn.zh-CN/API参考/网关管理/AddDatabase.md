@@ -18,7 +18,7 @@
 
  **说明：** 目前数据库类型仅支持MySQL。 |
 |DbUserName|String|是|dg\_test|访问数据库所用的用户名。 |
-|GatewayId|String|是|dg-yhss6sdlaffaq68|网关ID。 |
+|GatewayId|String|是|dg-yhss6sdla\*\*\*\*|网关ID。 |
 |Host|String|是|11.\*.\*.109|通过网关所在宿主机去访问数据库的地址。 |
 |Port|Integer|是|3440|通过网关所在宿主机去访问数据库的端口。 |
 |DbDescription|String|否|开发环境数据库|数据库的描述。 |
@@ -27,11 +27,11 @@
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
-|Code|String|OK|响应码 |
-|Data|String|2019-09-12T14:40:46|后端分配的实例ID |
-|ErrorMsg|String|无|异常信息 |
-|RequestId|String|EAF2AA07-860D-43DA-BEE8-1E43AAE024CD|请求ID |
-|Success|Boolean|true|是否成功 |
+|Code|String|OK|响应码。 |
+|Data|String|string|后端分配的实例ID。 |
+|ErrorMsg|String|string|异常信息。 |
+|RequestId|String|EAF2AA07-860D-43DA-BEE8-1E43AAE024CD|请求ID。 |
+|Success|Boolean|true|是否成功。 |
 
 ## 示例
 
@@ -54,8 +54,8 @@ http(s)://[Endpoint]/?Action=AddDatabase
 
 ```
 <RequestId>EAF2AA07-860D-43DA-BEE8-1E43AAE024CD</RequestId>
-<ErrorMsg>无</ErrorMsg>
-<Data>2019-09-12T14:40:46</Data>
+<ErrorMsg>string</ErrorMsg>
+<Data>string</Data>
 <Code>OK</Code>
 <Success>true</Success>
 ```
@@ -63,7 +63,7 @@ http(s)://[Endpoint]/?Action=AddDatabase
 `JSON`格式
 
 ```
-{"RequestId":"EAF2AA07-860D-43DA-BEE8-1E43AAE024CD","ErrorMsg":"无","Data":"2019-09-12T14:40:46","Code":"OK","Success":"true"}
+{"RequestId":"EAF2AA07-860D-43DA-BEE8-1E43AAE024CD","ErrorMsg":"string","Data":"string","Code":"OK","Success":"true"}
 ```
 
 ## 错误码
